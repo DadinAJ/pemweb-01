@@ -1,0 +1,46 @@
+.div1 {
+    width: 907px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #5cff40;
+    background-color: #5cff40;
+}
+
+.div2 {
+    float: left;
+    width: 125px; 
+    height: 128px; 
+    margin: 20px; 
+    background-color: yellow;
+}
+
+.div3 {
+    width: 755px;
+    height: 125px;
+    margin-top: 20px;
+    margin-left: 170px;
+    margin-right: 20px;
+    border: 1px solid orange;
+    background-color: orange;
+}
+
+.div4{
+    float: left;
+    position: absolute;
+    width: 125px;
+    height: 130px;
+    margin: 20px;
+    background-color: yellow;
+}
+   
+.div5{
+   width: 755px;
+    height: 125px;
+    margin-top: 20px;
+    margin-left: 170px;
+    margin-right: 20px;
+    border: 1px solid blue;
+    background-color: blue;
+}
