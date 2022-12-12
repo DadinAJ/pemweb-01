@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image">
+
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute(
+                    "src",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/N'Tami%2C_Western_Gorilla.jpg/1200px-N'Tami%2C_Western_Gorilla.jpg"
+                    );
+                alert("Ini gambar gorila")
+            }else if (drop_img == "singa") {
+                 image.setAttribute(
+                    "src",
+                    "https://3.bp.blogspot.com/-jibsbkgd4eQ/TmB3HLJ4_sI/AAAAAAAADD0/TyJdrMIU3_s/s1600/lions-007.jpg"
+                 );
+                 alert("Ini Gambar Singa")
+
+            }else if (drop_img = "elang") {
+                image.setAttribute(
+                    "src",
+                    "https://1.bp.blogspot.com/-BjvOrj-onRs/V6g-WZXBZdI/AAAAAAAAAno/km6yio3c4lobOJsxbZkfUPB9uA2ffQ7uwCLcB/s1600/eagle-pictures-6.jpg"
+                );
+                alert("Ini Gambar Elang")
+            
+            }
+        }
+    </script>
+</body>
+</html>
