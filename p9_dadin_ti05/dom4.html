@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            color: black;
+            background-color: aqua;
+        }
+        input{
+            width: 80%;
+            min-height: auto;
+            font-size: 26pt;
+            padding-right: 15%;
+        }
+        .form{
+            margin-left: 15%;
+        }
+
+        hr{
+            width: 50;
+            align-items: left;
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+<form name="f1">
+    Masukan angka 1:<input type="number" name="txtFirstNumber" onchange="hitung() ;"><br>
+    Masukan angka 2:<input type="number" name="txtSecondNumber" onchange="hitung() ;"><br>
+    <br>
+    <hr color="">
+    Pertambahan:<input type="number" name="txtPertambahan"><br>
+    Pengurangan:<input type="number" name="txtPengurangan"><br>
+    Perkalian:<input type="number" name="txtPerkalian"><br>
+</form>
+<script lang="JavaScript">
+    function hitung(){
+        let num1=parseInt(f1.txtFirstNumber.value);
+        let num2=parseInt(f1.txtSecondNumber.value);
+        let pertambahan=num1+num2
+        let pengurangan=num1-num2
+        let perkalian=num1*num2
+        f1.txtPertambahan.value=pertambahan;
+        f1.txtPengurangan.value=pengurangan;
+        f1.txtPerkalian.value=perkalian;
+        }
+</script>
+</body>
+</html>
